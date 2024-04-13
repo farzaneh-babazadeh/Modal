@@ -1,0 +1,33 @@
+body{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.modal{
+    z-index: 10;
+    width: 20rem;
+    height: 200px; 
+    padding: 1rem;
+    background-color: #fff;
+    border: #ccc;
+    box-shadow: 0 20px 120px rgba(0, 0, 0 , 0.07);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100vh);
+}
+.backdrop{
+z-index:5 ;
+background-color:rgba(0, 0, rgb(145, 155, 129), 0.1);
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+display: none;
+}
